@@ -6,7 +6,7 @@ html, body {
 .banner {
   padding: 0;
   margin: 0;
-  background: url(http://i.imgur.com/vdQ3kO9.jpg?1) no-repeat center;
+  background-image: url(movementandbeauty.jpg) center;
   height: 263px;
   width: 100%;
 }
