@@ -1,0 +1,115 @@
+<style>
+    #page-title {
+        display: none !important;
+    }
+
+    .pine .content .paragraphs-items a {
+        color: #d73f09;
+    }
+
+    .pine .content .paragraphs-items a:hover {
+        color: #212529;
+    }
+
+    blockquote {
+        font-family: 'georgia', serif;
+        line-height: 1.7 !important;
+        font-size: 1.3rem;
+        border: 5px solid #F7F5F5;
+        padding: 2rem;
+        margin: 4rem 0;
+        overflow: auto;
+    }
+
+    /*fullwidth cover*/
+
+    .paragraphs-item-261 {
+        min-height: 600px!important;
+        flex-direction: column;
+        justify-content: flex-start !important;
+    }
+
+    .paragraphs-item-261 .field-items .field-item {
+        background-color: transparent;
+        margin-top: 3rem;
+    }
+
+    /*oral histories*/
+
+    .paragraphs-item-261 h2 {
+        background-color: transparent;
+        color: #212529;
+        font-family: 'Stratum2Web', sans-serif;
+        font-size: 3rem;
+    }
+
+    .flex-wrapper {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .portrait-card img {
+        border-radius: 50%;
+    }
+
+
+    /*Events*/
+    .paragraphs-item-266 {
+        background: #f7f5f5;
+    }
+
+    .paragraphs-item-266 .field-items .field-item,
+    .paragraphs-item-266 h3 {
+        background-color: transparent !important;
+    }
+
+    .four-column {
+        display: grid;
+        gap: 2rem;
+    }
+
+    .event-card {
+        background: #fff;
+        border-radius: 1.2rem;
+        padding: 1rem;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    /*moving forward*/
+    .paragraphs-item-291 {
+        min-height: 600px!important;
+    }
+
+    @media (min-width: 640px) {
+        blockquote {
+            padding: 3rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .flex-wrapper {
+            flex-wrap: nowrap;
+        }
+
+        .portrait-card {
+            flex-basis: 30%;
+        }
+
+        .four-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+        }
+
+        .event-card {
+            padding: 2rem;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        blockquote {
+            font-size: 1.5rem;
+        }
+    }
+</style>

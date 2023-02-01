@@ -1,0 +1,258 @@
+<style>
+    #page-title {
+        display: none !important;
+    }
+
+    #block-system-main>.content,
+    .node>.content {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .pine .content .paragraphs-items a {
+        color: #d73f09;
+    }
+
+    .pine .content .paragraphs-items a:hover {
+        color: #212529;
+    }
+
+    /*used for oral histories and events*/
+    .flex-wrapper {
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .largeLink {
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+
+    /*fullwidth cover*/
+    .paragraphs-item-316 {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0.4) 80%, #fff 100%), url("https://eoa.oregonstate.edu/sites/eoa.oregonstate.edu/files/styles/paragraph-1920w/public/kathy-weston-1900x737.jpg?itok=YPoK8QOR") center /cover !important;
+        min-height: 600px !important;
+        position: relative;
+    }
+
+    .paragraphs-item-316 .field-items .field-item {
+        background-color: transparent;
+        margin-top: 2rem;
+    }
+
+    .paragraphs-item-316 h2 {
+        background-color: transparent;
+        color: #fff;
+        font-family: 'Stratum2Web', sans-serif;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    #subhead p:first-child {
+        color: #fff;
+        font-family: 'Stratum2Web', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    #subhead p:last-child {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    /*pullquote*/
+
+    .pine .paragraphs-items .cardBlockquote {
+        background: #f7f5f5;
+        border-radius: 1.2rem;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+        line-height: 1.7;
+    }
+
+    .pine .paragraphs-items .cardBlockquote blockquote {
+        padding: 0;
+    }
+
+    .pine .paragraphs-items .cardBlockquote .quote {
+        font-size: 1.4rem;
+        color: #212529;
+    }
+
+    .pine .paragraphs-items .cardBlockquote .attribute {
+        font-size: 1.1rem;
+        color: #212529;
+    }
+
+    .pine .paragraphs-items .floatedBlockquote {
+        padding: 2rem;
+        margin: 0 auto 2rem;
+    }
+
+
+    /*athletics*/
+    .paragraphs-item-301 img {
+        padding: 8px;
+        background: #fff;
+        filter: grayscale(1);
+        box-shadow: 0 2px 3px rgb(1, 1, 1);
+        transition: all .2s ease-in;
+    }
+
+    .paragraphs-item-301 img:hover {
+        filter: grayscale(0);
+    }
+
+    .paragraphs-item-301 .span6 {
+        display: flex;
+        align-items: center;
+    }
+
+    /*oral histories*/
+    .portrait-card {
+        position: relative;
+    }
+
+    .portrait-card img {
+        border-radius: 50%;
+        filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+    }
+
+    .portrait-card a {
+        padding: 1rem;
+        display: block;
+    }
+
+    .portrait-card a::before {
+        position: absolute;
+        content: '';
+        inset: 0;
+    }
+
+
+    /*Events*/
+    .paragraphs-item-266 {
+        background: #f7f5f5;
+    }
+
+    .paragraphs-item-266 .field-items .field-item,
+    .paragraphs-item-266 h3 {
+        background-color: transparent !important;
+    }
+
+    .eventCard {
+        background: #fff;
+        border-radius: 1.2rem;
+        padding: 1.3rem;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    }
+
+    .eventDate {
+        font-size: .8rem;
+        font-style: italic;
+    }
+
+    /*MOVING FORWARD*/
+    .pine .paragraphs-items .blockquoteCardpic {
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 500px;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    .pine .paragraphs-items .blockquoteCardpic blockquote {
+        padding: 1rem;
+    }
+
+
+    .paragraphs-item-306 .blockquoteCardpic img {
+        border-radius: 50%;
+    }
+
+    /*overriding theme code which is why there is a max-width*/
+    @media (max-width: 480px) {
+        .paragraphs-items {
+            margin: 0;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        .paragraphs-item-316 h2 {
+            font-size: 3rem;
+        }
+
+        #subhead {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+
+        #subhead p:first-child {
+            font-size: 2rem;
+        }
+
+        #subhead p:last-child {
+            margin-bottom: 3rem;
+            font-size: 1.5rem;
+        }
+
+        /*portrait cards break early*/
+        .paragraphs-item-271 .flex-wrapper {
+            flex-wrap: nowrap;
+        }
+
+        .portrait-card {
+            flex-basis: 30%;
+        }
+
+        .eventCard {
+            padding: 2rem;
+        }
+
+        .pine .paragraphs-items .blockquoteCardpic {
+            flex-wrap: nowrap;
+            max-width: 700px;
+            padding: 2rem;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .pine .paragraphs-items .floatedBlockquote {
+            max-width: 300px;
+            float: right;
+            margin: 0 0 2rem 2rem;
+            padding: 2rem;
+        }
+    }
+
+    @media (min-width: 1400px) {
+
+        /*event cards nowrap later*/
+        .paragraphs-item-266 .flex-wrapper {
+            flex-wrap: nowrap;
+        }
+
+        .eventCard {
+            flex-basis: 30%;
+        }
+
+        #block-system-main .paragraphs-item-306 .blockquoteCardpic {
+            float: right;
+            margin-left: 2rem;
+        }
+    }
+
+    @media (min-width:1500px) {
+        #subhead p:last-child {
+            color: #000;
+        }
+    }
+</style>
